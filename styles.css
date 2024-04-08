@@ -3,6 +3,25 @@
     box-sizing: border-box;
 }
 
+h1{
+    font-family: Ojuju;
+    padding-left: 10px;
+    font-size: 60px;
+    font-weight: 800;
+}
+
+h2{
+    font-family: Grandstander;
+    padding-left: 10px;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+h3{
+    font-family: Ojuju;
+    font-size: 25px;
+}
+
 img {
     max-width: 100%;
     display: block;
@@ -11,14 +30,14 @@ img {
 
 /* Page styling */
 body {
-    background-color: #333;
-    color: rgb(235, 235, 235);
+    background-color: #413620;
+    color: #c8d4a3;
     transition: all 2s;
 }
 
 body.switch {
-    background-color: rgb(235, 235, 235);
-    color: #333;
+    background-color: #c59155;
+    color: #eae4da;
 }
 
 #container {
@@ -63,12 +82,15 @@ main {
 main section {
     flex: 1;
     border: 1px rgb(235, 235, 235) dashed;
+    border-radius: 20px;
     margin: 0 .25em;
     padding: 1em;
 }
 
 a {
     text-decoration: none;
+    font-family: Grandstander;
+    font-size: 18px;
 }
 
 nav ol, nav ul {
@@ -85,21 +107,21 @@ section a {
     line-height: 1.1em;
     display: inline-block;
     padding: .5em;
-    color: orange;
+    color: #ceb991;
 }
 
 section a:hover {
-    background-color: orange;
-    color: #333;
+    background-color: #ceb991;
+    color: #413620;
 }
 
 section.switch a {
-    color: #333;
+    color: #ebdbbb;
 }
 
 section.switch a:hover {
-    background-color: #333;
-    color: rgb(235, 235, 235);
+    background-color: #ebdbbb;
+    color: #c59155;
 }
 
 button {
@@ -107,22 +129,25 @@ button {
     top: 20px;
     right: 20px;
     padding: 12px;
-    background-color: orange;
-    color: #333;
+    background-color: #c59155;
+    color: #fafafa;
     border: 1px solid transparent;
+    font-family: Grandstander;
+    border-radius: 20px;
 }
 
 button:hover {
-    background-color: coral;
+    background-color: #a16e2f;
     cursor: pointer;
 }
 
 button.switch {
-    background-color: rgb(235, 235, 235);
-    border-color: #333;
+    background-color: #413620;
+    border-color: none;
+    border-radius: 20px;
 }
 
 button.switch:hover {
-    background-color: #333;
-    color: rgb(235, 235, 235)
+    background-color: #ceb991;
+    color: #fafafa;
 }
