@@ -58,18 +58,17 @@ header {
     position: relative;
     display: flex;
     width: 1100px;
-    height: 250px;
+    height: 550px;
     margin: auto;
-    background-color: rgb(235, 235, 235);
-    color: #333;
+    background-image: url(images/IMG_1784.PNG);
+    background-repeat: no-repeat;
+    background-size: 70em;
     overflow: hidden;
-    display: grid;
 	place-items: center;
 }
 
 #banner.switch {
-    background-color: #333;
-    color: rgb(235, 235, 235);
+    background-image:url(images/IMG_1797.PNG);
     transition: all 2s;
 }
 
@@ -77,6 +76,7 @@ main {
     display: flex;
     justify-content: space-evenly;
     margin: 1em auto;
+    padding: 2em;
 }
 
 main section {
