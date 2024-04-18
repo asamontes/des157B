@@ -1,9 +1,26 @@
+body{
+    background-color: black;
+}
+
+div{
+    position:relative;
+}
+
+#circle{
+    position: absolute;
+    right:-3%;
+    bottom:-4%;
+    z-index: 1;
+}
+
+
 #myVideo {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
+    position: absolute;
+    z-index: 0;
+    right:200px;
+    bottom:6px;
+    width: 76em;
+    height: 50em;
 }
 
 .fa-bug {
