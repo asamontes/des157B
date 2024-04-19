@@ -1,5 +1,6 @@
 body{
     background-color: black;
+    font-family: Handjet;
 }
 
 div{
@@ -13,17 +14,16 @@ div{
     z-index: 1;
 }
 
-
 #myVideo {
     position: absolute;
     z-index: 0;
     right:200px;
     bottom:6px;
-    width: 76em;
+    width: 79em;
     height: 50em;
 }
 
-.fa-bug {
+.fa-fish {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -32,6 +32,50 @@ div{
     z-index: 1;
 }
 
-.fa-bug:hover {
+.fa-fish:hover {
     cursor: pointer;
+}
+
+#poem p {
+    color:antiquewhite;
+    position: absolute;
+    padding: 1em;
+    font-size: 7em;
+    transition: all 2.5s;
+    text-align: right;
+}
+
+#line1 {
+    bottom: -24%;
+    left: -3%;
+    z-index: 1;
+}
+
+#line2 {
+    bottom: -24%;
+    left: 23%;
+}
+
+#line3 {
+    bottom: -24%;
+    left: 61%;
+}
+
+#line4 {
+    bottom: -24%;
+    left: 23%;
+}
+
+#line5 {
+    bottom: -24%;
+    left: 23%;
+}
+
+
+.hidden {
+    opacity: 0;
+}
+
+.showing {
+    opacity: 1;
 }
