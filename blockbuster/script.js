@@ -29,45 +29,14 @@
     
     function checkTime() {
         console.log(parseInt(myVideo.currentTime));
-
-        if (poem.start[0] < myVideo.currentTime && myVideo.currentTime < poem.stop[0]) {
-            poem.line[0].className = "showing";
-          } else {
-            poem.line[0].className = "hidden";
-          }
-          if (poem.start[1] < myVideo.currentTime && myVideo.currentTime < poem.stop[1]) {
-            poem.line[1].className = "showing";
-          } else {
-            poem.line[1].className = "hidden";
-          }
-          if (poem.start[2] < myVideo.currentTime && myVideo.currentTime < poem.stop[2]) {
-            poem.line[2].className = "showing";
-          } else {
-            poem.line[2].className = "hidden";
-          }
-          if (poem.start[3] < myVideo.currentTime && myVideo.currentTime < poem.stop[3]) {
-            poem.line[3].className = "showing";
-          } else {
-            poem.line[3].className = "hidden";
-          }
-          if (poem.start[4] < myVideo.currentTime && myVideo.currentTime < poem.stop[4]) {
-            poem.line[4].className = "showing";
-          } else {
-            poem.line[4].className = "hidden";
-          }
-          if (poem.start[5] < myVideo.currentTime && myVideo.currentTime < poem.stop[2]) {
-            poem.line[5].className = "showing";
-          } else {
-            poem.line[5].className = "hidden";
-          }
         
-        // for (let i = 0; i < poem.start.length; i++) {
-        //     if (poem.start[i] < myVideo.currentTime && myVideo.currentTime < poem.stop[i]) {
-        //         poem.line[i].className = "showing";
-        //     } else {
-        //         poem.line[i].className = "hidden";
-        //     }
-        // };
+        for (let i = 0; i < poem.start.length; i++) {
+            if (poem.start[i] < myVideo.currentTime && myVideo.currentTime < poem.stop[i]) {
+                poem.line[i].className = "showing";
+            } else {
+                poem.line[i].className = "hidden";
+            }
+        };
     }
     
 
