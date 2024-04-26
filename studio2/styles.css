@@ -1,0 +1,33 @@
+body{
+    background-color: #A2B8AB;
+    font-family: Jost;
+}
+
+h1{
+    color: #612D3A;
+    font-weight: 500;
+    font-size: 60px;
+    position: absolute;
+    top: 4%;
+    left:32%;
+}
+
+h2{
+    font-family: Jost;
+    font-weight: 500;
+    font-size: 40px;
+    color: #612D3A;
+    position: absolute;
+    top: 60%;
+    left:42%;
+}
+
+p{
+    font-family: Jost;
+}
+
+img{
+    position: absolute;
+    top: 20%;
+    left:30%;
+}
