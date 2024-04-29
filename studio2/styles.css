@@ -8,7 +8,7 @@ h1{
     font-weight: 500;
     font-size: 60px;
     position: absolute;
-    top: 4%;
+    top: 3%;
     left:32%;
 }
 
@@ -19,15 +19,22 @@ h2{
     color: #612D3A;
     position: absolute;
     top: 60%;
-    left:42%;
+    left:34%;
 }
 
-p{
+#songs{
+    font-size: 20px;
     font-family: Jost;
     color:#6C4A4A;
+    position: absolute;
+    left:10%;
+    bottom:10%;
+    display: flex;
+    padding-left: 200px;
+    padding-right: 300px;
 }
 
-img{
+#timestamp{
     position: absolute;
     top: 20%;
     left:30%;

@@ -2,97 +2,41 @@
     "point1" : {
         "timestamp" : "15 minutes",
         "amount" : 6.5,
-        "songs":{
-            "song1":"My Blood by Twenty One Pilots",
-            "song2": "Resting Grounds by Christopher Larkin",
-            "song3": "Head Hunter by Dance Gavin Dance",
-            "song4": "ハロービルダー by Utsu P ft. Hatsune MIKU",
-            "song5": "とこしずめ by Inabakumori",
-            "song6": "Smithereens by Twenty One Pilots",
-            "song7": "The Grimm Troupe by Christopher Larkin"
-            
-        }
+        "songs": "My Blood by Twenty One Pilots, Resting Grounds by Christopher Larkin, Head Hunter by Dance Gavin Dance, ハロービルダー by Utsu P ft. Hatsune MIKU, とこしずめ by Inabakumori, Smithereens by Twenty One Pilots, The Grimm Troupe by Christopher Larkin"
     },
     "point2" : {
         "timestamp" : "30 minutes",
         "amount" : 4.5,
-        "songs" : {
-            "song7":"The Grimm Troupe by Christopher Larkin",
-            "song8": "ハローマリーナ (Hello Marina) by Inabakumori",
-            "song9": "Tear In My Heart by Twenty One Pilots",
-            "song10": "Greenpath by Christopher Larkin",
-            "song11": "Beso by Josean Log"
-        }
+        "songs" : "The Grimm Troupe by Christopher Larkin, ハローマリーナ (Hello Marina) by Inabakumori, Tear In My Heart by Twenty One Pilots, Greenpath by Christopher Larkin, Beso by Josean Log"
     },
     "point3" : {
         "timestamp" : "45 minutes",
         "amount" : 6.5,
-        "songs" : {
-            "song11": "Beso by Josean Log",
-            "song12": "Beyond the way by Giga",
-            "song13": "We Own the Night by Dance Gavin Dance",
-            "song14": "Pascal Beats by Inabakumori",
-            "song15": "Shy Away by Twenty One Pilots",
-            "song16": "Crossroads by Christopher Larkin",
-            "song17": "Time :: Fate :: God by Nothing but Thieves"
-        }
+        "songs" : "Beso by Josean Log, Beyond the way by Giga, We Own the Night by Dance Gavin Dance, Pascal Beats by Inabakumori, Shy Away by Twenty One Pilots, Crossroads by Christopher Larkin, Time :: Fate :: God by Nothing but Thieves"
     },
     "point4" : {
         "timestamp" : "1 hour",
         "amount" : 3.5,
-        "songs" : {
-            "song17": "Time :: Fate :: God by Nothing but Thieves",
-            "song18": "Estrechez de Corazon by Los Prisioneros",
-            "song19": "サラマンダー By DECO*27",
-            "song20": "COOLER GIRL by INABAKUMORI"
-        }
+        "songs" : "Time :: Fate :: God by Nothing but Thieves, Estrechez de Corazon by Los Prisioneros, サラマンダー By DECO*27, COOLER GIRL by INABAKUMORI"
     },
     "point5" : {
         "timestamp" : "1 hour and 15 min",
         "amount" : 5.5,
-        "songs" : {
-            "song20": "COOLER GIRL by INABAKUMORI",
-            "song21": "Legend by Twenty One Pilots",
-            "song22": "City of Tears by Christopher Larkin",
-            "song23": "DOKUZU by NAKISO",
-            "song24": "Pachuca Sunrise by Minus the Bear",
-            "song25": "ルーキー By DECO*27"
-        }
+        "songs" : "COOLER GIRL by INABAKUMORI, Legend by Twenty One Pilots, City of Tears by Christopher Larkin, DOKUZU by NAKISO, Pachuca Sunrise by Minus the Bear, ルーキー By DECO*27"
     },
     "point6" : {
         "timestamp" : "1 hour and 30 min",
         "amount" : 5.5,
-        "songs" : {
-            "song25": "ルーキー By DECO*27",
-            "song26": "Loop Spinner by INABAKUMORI",
-            "song27": "The Run and Go by Twenty One Pilots",
-            "song28": "We Don’t Believe What’s on TV by Twenty One Pilots",
-            "song29": "Umitagari by Maretu",
-            "song30": "Hollow Knight by Christopher Larkin"
-        }
+        "songs" : "ルーキー By DECO*27, Loop Spinner by INABAKUMORI, The Run and Go by Twenty One Pilots, We Don’t Believe What’s on TV by Twenty One Pilots, Umitagari by Maretu, Hollow Knight by Christopher Larkin"
     },
     "point7" : {
         "timestamp" : "1 hour and 45 min",
         "amount" : 5.5,
-        "songs" : {
-            "song30": "Hollow Knight by Christopher Larkin",
-            "song31": "Wrong Enemy?! by Toby Fox",
-            "song32": "Fine by Lemon Demon",
-            "song33": "Stroke God, Millionaire by Dance Gavin Dance",
-            "song34": "Johnny Boy by Twenty One Pilots",
-            "song35": "Lost Umbrella by INABAKUMORI"
-        }
+        "songs" : "Hollow Knight by Christopher Larkin, Wrong Enemy?! by Toby Fox, Fine by Lemon Demon, Stroke God, Millionaire by Dance Gavin Dance, Johnny Boy by Twenty One Pilots, Lost Umbrella by INABAKUMORI"
     },
     "point8" : {
         "timestamp" : "2 hours",
         "amount" : 5.5,
-        "songs" : {
-            "song35": "Lost Umbrella by INABAKUMORI",
-            "song36": "Nosk by Christopher Larkin",
-            "song37": "Oh! One True Love by Toby Fox",
-            "song38": "ベノム by Kairikibear",
-            "song39": "Son of Robot by Dance Gavin Dance",
-            "song40": "Not Today by Twenty One Pilots"
-        }
+        "songs" : "Lost Umbrella by INABAKUMORI, Nosk by Christopher Larkin, Oh! One True Love by Toby Fox, ベノム by Kairikibear, Son of Robot by Dance Gavin Dance, Not Today by Twenty One Pilots"
     }
 }
