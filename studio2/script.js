@@ -19,9 +19,9 @@
         const images = [
             '<img src= "images/3_45.png" alt="3:45pm" width="550" height="300">',
             '<img src= "images/4pm.png" alt="4:00pm" width="550" height="300">',
-            '<img src= "images/4_15.png" alt="4:15pm" width="550" height="300">',
-            '<img src= "images/4_30.png" alt="4:30pm" width="550" height="300">',
-            '<img src= "images/4_45.png" alt="4:45pm" width="550" height="300">',
+            '<img src= "images/4_15pm.png" alt="4:15pm" width="550" height="300">',
+            '<img src= "images/4_30pm.png" alt="4:30pm" width="550" height="300">',
+            ' <img src= "images/4_45pm.png" alt="4:45pm" width="550" height="300">',
             '<img src= "images/5pm.png" alt="5:00pm" width="550" height="300">',
             '<img src= "images/5_15.png" alt="5:15pm" width="550" height="300">',
             '<img src= "images/5_30.png" alt="5:30pm" width="550" height="300">'
