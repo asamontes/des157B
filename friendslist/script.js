@@ -9,6 +9,7 @@ Parse.serverURL = 'https://parseapi.back4app.com/';
     const editBtns = document.querySelectorAll(".fa-edit");
     const addFriendForm = document.getElementById("add-friend");
     const editFriendForm = document.getElementById("edit-friend");
+    const inputs = document.querySelectorAll("#add-friend input:not([type=submit])");
 
     newBtn.addEventListener("click", function(event){
         event.preventDefault();
@@ -17,8 +18,42 @@ Parse.serverURL = 'https://parseapi.back4app.com/';
 
     addFriendForm.addEventListener("submit", function(event){
         event.preventDefault();
-        addFriendForm.className = "add-friend-offscreen";
+        // addFriendForm.className = "add-friend-offscreen";
+        addFriend();
     });
+
+    async function addFriend(){
+        const newFriend = {};
+
+        for(let i=0; i<inputs.length; i++){
+            let key = inputs[i].getAttribute('name');
+            let value = inputs[i].value;
+            newFriend[key] = value;
+        }
+        if(newFriend.fname != "" && newFriend.lname !="" && newFriend.email != ""){
+            const newFriendData = new Parse.Object('Friends');
+            newFriendData.set('fname', newFriend.fname);
+            newFriendData.set('lname', newFriend.lname);
+            newFriendData.set('email', newFriend.email);
+            newFriendData.set('facebook', newFriend.facebook);
+            newFriendData.set('twitter', newFriend.twitter);
+            newFriendData.set('instagram', newFriend.instagram);
+            newFriendData.set('linkedin', newFriend.linkedin);
+        } else {
+            addFriendForm.classname = 'add-friend-offscreen';
+        };
+
+        try{
+            const result = await newFriendData.save();
+            // console.log('friends created', result);
+            resetFormFields();
+            addFriendForm.className = 'add-friend-offscreen';
+            friendList.innerHTML = '';
+            displayFriends();
+        } catch (error){
+            console.error('Error while creating friend:', error);
+        };
+    }
 
     for (let i=0; i<editBtns.length; i++){
         editBtns[i].addEventListener("click", function(event){
