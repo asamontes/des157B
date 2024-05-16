@@ -1,0 +1,36 @@
+body{
+    background-color:floralwhite;
+    font-family: 'Jersey 15';
+    text-align: center;
+    margin-top: 180px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    background-color: #2462dd;
+    border-radius: 20px;
+    padding:10px;
+    color: whitesmoke;
+}
+
+@media only screen and (min-width: 600px) {
+    header{
+        max-width: 1020px;
+        margin: auto;
+    }
+    main {
+        width: 66.6666%;
+    }
+}
+
+@media only screen and (min-width: 1020px) {
+    main {
+        width: 75%;
+        display: flex;
+        gap: 20px;
+    }
+}
