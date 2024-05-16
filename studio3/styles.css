@@ -1,0 +1,45 @@
+body{
+    background-color: #EBDCB3;
+}
+
+h1{
+    font-family:Londrina Solid;
+    font-weight: 300;
+    font-size: 80px;
+    letter-spacing: 12px;
+    position: absolute;
+    left: 3%;
+    bottom: 70%;
+    color:#1E1E1E;
+}
+
+#note{
+    position: absolute;
+    left: 44.5%;
+    bottom: -1%;
+}
+
+#bust1{
+    position: absolute;
+    left: 54.5%;
+    bottom: 20%;
+}
+
+#bust2{
+    position: absolute;
+    left: 67%;
+    bottom: 45%;
+}
+
+#bust3{
+    position: absolute;
+    left: 76%;
+    bottom: 20%;
+}
+
+#melonfaces{
+    display: flex;
+    position: absolute;
+    left: 1%;
+    bottom: 20%;
+}
