@@ -37,9 +37,63 @@ h1{
     bottom: 20%;
 }
 
-#melonfaces{
-    display: flex;
+#face1{
     position: absolute;
     left: 1%;
     bottom: 20%;
+}
+
+#face2{
+    position: absolute;
+    left: 11.5%;
+    bottom: 21.5%;
+}
+
+#face3{
+    position: absolute;
+    left: 24%;
+    bottom: 23%;
+}
+
+.draggable {
+    width: 25%;
+    min-height: 6.5em;
+    margin: -4px;
+    touch-action: none;
+    user-select: none;
+}
+
+p{
+    font-family:Londrina Solid;
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 8px;
+    position: absolute;
+    left: 7%;
+    bottom: 50%;
+    color:#1E1E1E;
+}
+
+.bi-arrow-90deg-right{
+    transform:rotate(90deg);
+    position: absolute;
+    left: 28%;
+    bottom: 50%;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    font-family:Londrina Solid;
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 3px;
+    position: absolute;
+    left: 2%;
+    bottom: 2%;
+}
+
+footer a{
+    text-decoration: none;
+    color: #1E1E1E;
 }
