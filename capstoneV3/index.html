@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/98mprice/PSone.css@master/PSone.min.css">
+    <link href="styles.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <audio controls autoplay loop>
+        <source src="sounds/SF_V2.mp3" type="audio/mp3">
+    </audio>
+
+    <main>
+        <section id="titlepage">
+            <h1>CAPSTONE</h1>
+            <p class="signature">CREATED BY APRIL AND ALYSSA</p>
+            <div class="enterneem">
+                <label>enter your name</label>
+                <input type="text" class="name">
+            </div>
+            <button type="submit" style="margin-bottom: .4em" class="btn">Enter</button>
+        </section>
+
+        <section id="overlay" class="hidden">
+            <img src="images/main.png" alt="da journalist" height="500" width="400">
+            <p id="username"></p>
+            <div class="arrows"></div>
+        </section>
+
+        <section id="overlay3" class="hidden">
+            <container class="characters"><img src="images/Frame1.png" alt="chars" height="240" width="1500"></container>
+        </section>
+    </main>
+
+    <div><img src="images/buttonleft.png" class="left"  alt="button left" height="35" width="50"></div>
+    <div><img src="images/buttonright.png" class="right" alt="button right" height="35" width="50"></div>
+    <!-- <button type="submit" style="margin-bottom: .4em" class="button left"></button>
+    <button type="submit" style="margin-bottom: .4em" class="button right"></button> -->
+</body>
+</html>
