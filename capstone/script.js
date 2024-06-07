@@ -25,54 +25,36 @@
         nameData.value = '';
     }
 
-    // document.querySelector('.btn').addEventListener('click', function(event){
-    //     event.preventDefault();
-    //     document.querySelector('#overlay').className = "show";
-    // });
+    // const overlay2 = document.querySelector('#overlay2');
+    const rightbtn = document.querySelector('.right');
+    const newButton1 = document.createElement('button');
+    newButton1.id = 'universe1';
+    //newButton1.setAttribute('id', 'universe1')
+    const newButton2 = document.createElement('button');
+    let arrows = document.querySelector('.arrows');
     
-    // enterNm.addEventListener('submit', function (event) {
+    rightbtn.addEventListener('mousedown', function(e){
+        e.preventDefault();
+        username.innerHTML = 'Which universe should I travel to first? Don’t worry, we’ll be able to travel between the two easily later.'
+        
+        newButton1.textContent = 'Universe 1';
+        arrows.appendChild(newButton1);
+
+        newButton2.textContent = 'Universe 2';
+        arrows.appendChild(newButton2);
+    });
+
+    document.addEventListener('click', function(event){
+        event.preventDefault();
+        if(event.tartget.id == 'universe1')[
+            //do something
+        ]
+        // if
+    });
+
+    // rightbtn.addEventListener('mousedown', function(event){
     //     event.preventDefault();
-    //     document.querySelector('#overlay').className = "show";
-    //     processNameData(nameData);
+    //     overlay2.classList.remove('hidden');
+    //     overlay.className.add('hidden');
     // });
-
-    // function processNameData(nameData){
-    //     const names = [];
-
-    //     for (const eachWord of nameData){
-    //         if (eachWord.value){
-    //             words.push(eachWord.value);
-    //         } else {
-    //             addName(words);
-    //         }
-    //     }
-
-        // function processNameData(nameData){
-        //     const names = [];
-    
-        //     for (const eachWord of nameData){
-        //         if (eachWord.value){
-        //             names.push(eachWord.value);
-        //         } else{
-        //             emptyfields.push(counter);
-        //         }
-        //         counter++;
-        //     }
-        //     if (emptyfields.length>0){
-        //         showErrors(nameData, emptyfields);
-        //     } else {
-        //         addName(names);
-        //     }
-        // }
-
-    // function addName(names){
-    //     document.querySelector('#overlay').className = 'show';
-
-    //     const myText = `Hello, I’m ${names}. I’m a journalist from Earth, year 2024, and I’m researching work culture and its effects on autistic people. I’m visiting two universes to see if there are any lessons I can take back home to Earth.`;
-
-    //     username.innerHTML = myText;
-    //     for (const eachField of nameData){
-    //         eachField.value = '';
-    //     }
-    // }
 })();
