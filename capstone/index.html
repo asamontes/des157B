@@ -6,40 +6,128 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/98mprice/PSone.css@master/PSone.min.css">
     <link href="styles.css" rel="stylesheet">
+    
+    <!-- JQuery Library for show() method-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Sweet Scroll Library-->
+    <script src="sweet-scroll.min.js" defer></script>
+
     <script src="script.js" defer></script>
     <title>Document</title>
 </head>
 <body>
 
-    <audio controls autoplay loop>
+    <!-- <audio controls autoplay loop>
         <source src="sounds/SF_V2.mp3" type="audio/mp3">
-    </audio>
+    </audio> -->
 
     <main>
+        <audio controls autoplay>
+            <source src="sounds/titlescreen.mp3" type="audio/mp3">
+        </audio>
+
         <section id="titlepage">
-            <h1>CAPSTONE</h1>
-            <p class="signature">CREATED BY APRIL AND ALYSSA</p>
+            <h1>timescapes</h1>
+
+            <div id="bttmofscrn" class="">
+                <p class="signature">CREATED BY APRIL AND ALYSSA</p>
+                <p class="sources">SOURCES</p>
+            </div>
+
             <div class="enterneem">
                 <label>enter your name</label>
                 <input type="text" class="name">
             </div>
+
             <button type="submit" style="margin-bottom: .4em" class="btn">Enter</button>
         </section>
-
+        
+        <!-- intro page after the title page -->
         <section id="overlay" class="hidden">
             <img src="images/main.png" alt="da journalist" height="500" width="400">
             <p id="username"></p>
-            <div class="arrows"></div>
+            <button type="submit" class="btn2" onclick="next()" style="margin-bottom: .4em; padding-left: 64px; padding-right: 64px;
+            padding-bottom: 15px"> next </button>
         </section>
 
-        <section id="overlay3" class="hidden">
-            <container class="characters"><img src="images/Frame1.png" alt="chars" height="240" width="1500"></container>
+        <!-- page that shows the user the two universe buttons -->
+        <section id="overlay1" class="hidden">
+            <img src="images/main.png" alt="da journalist" height="500" width="400">
+            <p>Which universe should I travel to first? Don’t worry, we’ll be able to travel between the two easily later.</p>
+            <div class="unis">
+                <button id="universe1">LAMENT</button>
+                <button id="universe2">GENESIS</button>
+            </div>
         </section>
+
+        <!-- this is where the horizontal scroll should be implemented -->
+        <section id="overlay2" class="hidden">
+            <div class="dys_bkg"><img src="images/dystopia.png" alt="dystopia bkg" height="620" width="1700"></div>
+            <div class="charas">
+                <img src="images/alkie.png" alt="alkie" style="margin-right: -20px;" height="500" width="400">
+                <img src="images/cogs.png" alt="cogs" height="500" width="400">
+                <img src="images/puffer.png" alt="puffer" height="500" width="400">
+                <img src="images/rove.png" alt="images" height="500" width="400">
+            </div>
+        </section>
+
+        <!-- this overlay is for the utopian world -->
+         <section id="overlay3" class="hidden">
+            <div class="utp_bkg"><img src="images/utopia.png" alt="utopian bkg" height="620" width="1700"></div>
+
+            <div class="welcome"><p>Welcome to Genesis</p></div>
+
+            <div class="charas2">
+                <img src="images/kiki.png" alt="kiki" style="margin-right: -20px; margin-top: -20px;" height="550" width="416">
+                <img src="images/bolts.png" alt="bolts" style="margin-top: 2px;" height="550" width="505">
+                <img src="images/candy.png" alt="candy" height="500" width="400">
+                <img src="images/love.png" alt="love" height="500" width="400">
+            </div>
+         </section>
+
+         <!-- character interaction starts here -->
+          <section id="meetALKIE" class="hidden">
+            <img src="images/alkie.png" alt="alkie" class="movealkie" style="margin-right: -20px;" height="700" width="600">
+            <div class="container">
+                <img src="images/alkieicon.png" alt="alkie's icon" height="150" width="150">
+                <p><strong>Alkie:</strong> ...</p>
+            </div>
+          </section>
+
+          <section id="meetCOGS" class="hidden">
+            <img src="images/alkie.png" alt="alkie" class="movealkie" style="margin-right: -20px;" height="700" width="600">
+            <div class="container">
+                <img src="images/alkieicon.png" alt="alkie's icon" height="150" width="150">
+                <p><strong>Alkie:</strong> ...</p>
+            </div>
+          </section>
+
+          <section id="meetPUFFER" class="hidden">
+            <img src="images/alkie.png" alt="alkie" class="movealkie" style="margin-right: -20px;" height="700" width="600">
+            <div class="container">
+                <img src="images/alkieicon.png" alt="alkie's icon" height="150" width="150">
+                <p><strong>Alkie:</strong> ...</p>
+            </div>
+          </section>
+
+          <section id="meetROVE" class="hidden">
+            <img src="images/alkie.png" alt="alkie" class="movealkie" style="margin-right: -20px;" height="700" width="600">
+            <div class="container">
+                <img src="images/alkieicon.png" alt="alkie's icon" height="150" width="150">
+                <p><strong>Alkie:</strong> ...</p>
+            </div>
+          </section>
+
+         <div id="items" class="hidden">
+            <img src="images/notebookicon.png" alt="notebook" id="nootbook" height="10" width="10">
+            <img src="images/doneicon.png" alt="star w/face" id="starbutt" height="10" width="10">
+        </div>
     </main>
-
-    <div><img src="images/buttonleft.png" class="left"  alt="button left" height="35" width="50"></div>
-    <div><img src="images/buttonright.png" class="right" alt="button right" height="35" width="50"></div>
-    <!-- <button type="submit" style="margin-bottom: .4em" class="button left"></button>
-    <button type="submit" style="margin-bottom: .4em" class="button right"></button> -->
+<!-- 
+    <div id="items" class="hidden">
+        <img src="images/notebookicon.png" alt="notebook" height="10" width="10">
+        <img src="images/doneicon.png" alt="star w/face" height="10" width="10">
+    </div> -->
 </body>
 </html>
