@@ -21,8 +21,12 @@
     const button = document.querySelector('.btn');
     const items = document.querySelector('#items');
 
+    const butts = new Audio('sounds/buttons.mp3');
+    const lament = new Audio('sounds/lamentDYS.mp3');
+
     button.addEventListener('click', function(event){
         event.preventDefault();
+        butts.play();
         if (nameData.value.trim() !== "") {
             items.classList.remove('hidden');
             overlay.classList.remove('hidden');
@@ -33,7 +37,7 @@
     });
 
     function addName(name) {
-        const myText = `Hello, I’m ${name}. I’m a journalist from Earth, year 2024, and I’m researching work culture and its effects on autistic people. I’m visiting two universes to see if there are any lessons I can take back home to Earth.`;
+        const myText = `Hello, I’m ${name}. I’m a journalist from Earth, year 2024, and I’m researching work culture. I’m visiting two universes to see if there are any lessons I can take back home to Earth.`;
         username.textContent = myText;
         nameData.value = '';
     }
@@ -44,6 +48,7 @@
 
     nextbtn.addEventListener('mousedown', function(e){
         e.preventDefault();
+        butts.play();
         username.innerHTML = 'After my travels, I have to submit an article. Feel free to take notes using the notebook button. Once I feel like I’ve gathered enough information, I’m going to click the star button to wrap up. Safe travels!'
 
         // Wait for a brief moment to ensure DOM updates
@@ -58,8 +63,10 @@
     });
 
     const overlay3 = document.querySelector('#overlay3');
+
     document.addEventListener('click', function(event){
         event.preventDefault();
+        butts.play();
         if(event.target.id == 'universe1'){
             //do something
             overlay2.classList.remove('hidden');
@@ -76,6 +83,16 @@
     SweetScroll.create({
         horizontal: true,
       }, ".characters");
+
+
+    const alkie = document.querySelector('.talktoalkie');
+    const meetalkie = document.querySelector('#meetalkie');
+
+    alkie.addEventListener('mousedown', function(e){
+        e.preventDefault();
+        butts.play();
+        meetalkie.className.remove('hidden');
+    });
 
     // const newButton = document.createElement('button');
     // newButton.id = 'next2';

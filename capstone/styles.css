@@ -380,7 +380,7 @@ audio {
 #items{
     position: absolute;
     top: 94%;
-    left: 12%;
+    left: 6%;
 }
 
 #items img{
@@ -398,6 +398,10 @@ audio {
 
 #nootbook{
     background-color: #cadde2;
+}
+
+#switch{
+    background-color:#D8DCDF;
 }
 
 /* .explain{
@@ -468,13 +472,32 @@ main section{
 
 .container p{
     margin-top: 10px;
+    line-height: 1.2em;
 }
 
-#meetALKIE{
+#meetALKIE, #meetCOGS, #meetPUFFER, #meetROVE{
     background: url(images/dystopia.png);
 }
 
 .movealkie{
+    position: absolute;
+    left: 30%;
+    bottom: -30%;
+}
+
+.movecogs{
+    position: absolute;
+    left: 30%;
+    bottom: -30%;
+}
+
+.movepuffer{
+    position: absolute;
+    left: 30%;
+    bottom: -30%;
+}
+
+.moverove{
     position: absolute;
     left: 30%;
     bottom: -30%;
